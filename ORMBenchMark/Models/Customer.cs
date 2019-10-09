@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ORMBenchMark.Models
 {
+    [Table("customer")]
    public  class Customer
     {
-        public int SlNo { get; set; }
-        public int CustomerId { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set; }
-        public string LastName { get; set; }
-        public string CompanyName { get; set; }
-        public string SalesPerson { get; set; }
-        public string EmailAddress { get; set; }
-        public string Phone { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public int slno { get; set; }
+        public int customerid { get; set; }
+        public string firstname { get; set; }
+        public string middlename { get; set; }
+        public string lastname { get; set; }
+        public string companyname { get; set; }
+        public string salesperson { get; set; }
+        public string emailaddress { get; set; }
+        public string phone { get; set; }
+        public DateTime modifieddate { get; set; }
     }
 }

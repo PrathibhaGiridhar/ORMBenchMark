@@ -27,16 +27,16 @@ namespace ORMBenchMark
                             {
                                 customerList.Add(new Customer()
                                 {
-                                    SlNo = Convert.ToInt32(reader["SlNo"]),
-                                    CustomerId = Convert.ToInt32(reader["CustomerId"]),
-                                    FirstName = Convert.ToString(reader["FirstName"]),
-                                    MiddleName = Convert.ToString(reader["MiddleName"]),
-                                    LastName = Convert.ToString(reader["LastName"]),
-                                    CompanyName = Convert.ToString(reader["CompanyName"]),
-                                    SalesPerson = Convert.ToString(reader["SalesPerson"]),
-                                    EmailAddress = Convert.ToString(reader["EmailAddress"]),
-                                    Phone = Convert.ToString(reader["Phone"]),
-                                    ModifiedDate = Convert.ToDateTime(reader["ModifiedDate"])
+                                    slno = Convert.ToInt32(reader["slno"]),
+                                    customerid = Convert.ToInt32(reader["customerid"]),
+                                    firstname = Convert.ToString(reader["firstname"]),
+                                    middlename = Convert.ToString(reader["middlename"]),
+                                    lastname = Convert.ToString(reader["lastname"]),
+                                    companyname = Convert.ToString(reader["companyname"]),
+                                    salesperson = Convert.ToString(reader["salesperson"]),
+                                    emailaddress = Convert.ToString(reader["emailaddress"]),
+                                    phone = Convert.ToString(reader["phone"]),
+                                    modifieddate = Convert.ToDateTime(reader["modifieddate"])
                                 });
                             }
                             conn.Close();

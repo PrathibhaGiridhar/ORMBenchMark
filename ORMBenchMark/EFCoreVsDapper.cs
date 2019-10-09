@@ -33,52 +33,52 @@ namespace ORMBenchMark
         //    return _DapperRepo.GetUsersWithDapper();
         //}
 
-        [Benchmark]
-        public Customer GetCustomer_EntityFramework()
-        {
-            return _EFRepo.GetCustomer_EntityFramework();
-        }
+        //[Benchmark]
+        //public Customer GetCustomer_EntityFramework()
+        //{
+        //    return _EFRepo.GetCustomer_EntityFramework();
+        //}
+
+        //[Benchmark]
+        //public Customer GetCustomer_Dapper()
+        //{
+        //    return _DapperRepo.GetCustomer_Dapper();
+        //}
+
+        //[Benchmark]
+        //public bool InsertCustomer_EntityFramework()
+        //{
+        //    return _EFRepo.InsertCustomer_EntityFramework();
+        //}
+
+        //[Benchmark]
+        //public bool InsertCustomer_Dapper()
+        //{
+        //    return _DapperRepo.InsertCustomer_Dapper();
+        //}
+
+        //[Benchmark]
+        //public bool UpdateCustomer_EntityFramework()
+        //{
+        //    return _EFRepo.UpdateCustomer_EntityFramework();
+        //}
+
+        //[Benchmark]
+        //public bool UpdateCustomer_Dapper()
+        //{
+        //    return _DapperRepo.UpdateCustomer_Dapper();
+        //}
 
         [Benchmark]
-        public Customer GetCustomer_Dapper()
+        public bool DeleteCustomer_Dapper()
         {
-            return _DapperRepo.GetCustomer_Dapper();
-        }
-
-        [Benchmark]
-        public bool InsertCustomer_EntityFramework()
-        {
-            return _EFRepo.InsertCustomer_EntityFramework();
-        }
-
-        [Benchmark]
-        public bool InsertCustomer_Dapper()
-        {
-            return _DapperRepo.InsertCustomer_Dapper();
-        }
-
-        [Benchmark]
-        public bool UpdateCustomer_EntityFramework()
-        {
-            return _EFRepo.UpdateCustomer_EntityFramework();
-        }
-
-        [Benchmark]
-        public bool UpdateCustomer_Dapper()
-        {
-            return _DapperRepo.UpdateCustomer_Dapper();
+            return _DapperRepo.DeleteCustomer_Dapper();
         }
 
         [Benchmark]
         public bool DeleteCustomer_EntityFramework()
         {
             return _EFRepo.DeleteCustomer_EntityFramework();
-        }
-
-        [Benchmark]
-        public bool DeleteCustomer_Dapper()
-        {
-            return _DapperRepo.DeleteCustomer_Dapper();
         }
 
         //[Benchmark]

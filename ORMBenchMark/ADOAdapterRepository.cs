@@ -26,16 +26,16 @@ namespace ORMBenchMark
                         return (from DataRow dr in resultTable.Rows
                                 select new Customer()
                                 {
-                                    SlNo = Convert.ToInt32(dr["SlNo"]),
-                                    CustomerId = Convert.ToInt32(dr["CustomerId"]),
-                                    FirstName = Convert.ToString(dr["FirstName"]),
-                                    MiddleName = Convert.ToString(dr["MiddleName"]),
-                                    LastName = Convert.ToString(dr["LastName"]),
-                                    CompanyName = Convert.ToString(dr["CompanyName"]),
-                                    SalesPerson = Convert.ToString(dr["SalesPerson"]),
-                                    EmailAddress = Convert.ToString(dr["EmailAddress"]),
-                                    Phone = Convert.ToString(dr["Phone"]),
-                                    ModifiedDate = Convert.ToDateTime(dr["ModifiedDate"])
+                                    slno = Convert.ToInt32(dr["slno"]),
+                                    customerid = Convert.ToInt32(dr["customerid"]),
+                                    firstname = Convert.ToString(dr["firstname"]),
+                                    middlename = Convert.ToString(dr["middlename"]),
+                                    lastname = Convert.ToString(dr["lastname"]),
+                                    companyname = Convert.ToString(dr["companyname"]),
+                                    salesperson = Convert.ToString(dr["salesperson"]),
+                                    emailaddress = Convert.ToString(dr["emailaddress"]),
+                                    phone = Convert.ToString(dr["phone"]),
+                                    modifieddate = Convert.ToDateTime(dr["modifieddate"])
                                 }).ToList();
                     }
                 }
